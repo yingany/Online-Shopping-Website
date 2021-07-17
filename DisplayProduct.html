@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>Dobbylaal</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/cover.css" rel="stylesheet">
+<script src="js/DisplayProduct.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+<div class="site-wrapper">
+<div class="site-wrapper-inner">
+<div class="cover-container">
+<div class="masthead clearfix">
+<div class="inner">
+<h3 class="masthead-brand">Dobbylaal</h3>
+<nav>
+<ul class="nav masthead-nav">
+<li class="active"><a href="home.html">Home</a></li>
+<li><a href="#">Favourites</a></li>
+<li><a href="#">Cart</a></li></ul></nav></div></div></div></div></div>
+<script language="JavaScript" type="text/javascript" style="align:left">
+if (location.search){
+	var image_filename = location.search.substring(1);
+	var img = location.search.substring(1);
+	var d=img.indexOf('?');
+	var e=img.indexOf('-');
+}
+</script>
+<table style="position:absolute;TOP:100px;LEFT:300px;">
+<tr>
+<td><script>document.write('<IMG style="height:500px;width:500px;"SRC="' + image_filename + '"><br/>');
+</script></td>
+<td><script>document.write('<h2>Name:'+img.substring(d+1,e)+"</h2><br>");</script>
+<script>document.write('<h2>Price:'+img.substring(e+1)+"</h2><br>");</script>
+<p><input type="button" method="post" class="btn btn-lg btn-default"value="Buy Now" onclick="sendEmail()"/></p></td></tr>
+</body>
+</html>
